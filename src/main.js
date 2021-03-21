@@ -28,7 +28,7 @@ Vue.use(VueGtag, {
 
 import VueMixpanel from 'vue-mixpanel'
 Vue.use(VueMixpanel, {
-  token: 'e5df6aab318089da6c499bc6bf3123f9' //TODO replace this token with your own MixPanel tracking token
+  token: '5b0115d5995f8c265b4d2697d6afa518' //TODO replace this token with your own MixPanel tracking token
 })
 
 
