@@ -15,6 +15,7 @@
     "firebase": "^7.19.1",
     "material-icons": "^0.3.1",
     "mixpanel-browser": "^2.41.0",
+    "node": "^15.10.0",
     "sass": "^1.26.10",
     "sass-loader": "^10.0.1",
     "vue": "^2.6.11",
