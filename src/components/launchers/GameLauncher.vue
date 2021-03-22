@@ -5,7 +5,7 @@
     <div class="container">
       <div class="card shadow mb-4" style="margin-top: 76px">
         <div class="card-body text-center" v-if="!dataReady && !error">
-          <h1 class="m-5">Loading game...</h1>
+          <h1 class="m-5">Hang on! It's about to get awesome...</h1>
           <b-spinner
             class="m-5"
             style="width: 4rem; height: 4rem"
@@ -28,14 +28,14 @@
 
         <div v-if="dataReady && !error" class="card-body">
           <!-- Remove for published version and replace with your own header and about section -->
-          <div id="homepage-intro-text" v-if="!routeGSheetID">
+          <!-- <div id="homepage-intro-text" v-if="!routeGSheetID">
             <div class="row mb-4">
               <div class="col-sm text-center">
                 <h1>Story Synth</h1>
                 <h3>Game Launcher</h3>
               </div>
             </div>
-          </div>
+          </div> -->
 
           <div class="">
             <div
