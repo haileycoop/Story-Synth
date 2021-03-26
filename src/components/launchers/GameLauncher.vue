@@ -200,14 +200,7 @@
           >
             <div class="col-sm text-center">
               <router-link
-                :to="{
-                  path: constructURL(
-                    $route.fullPath,
-                    Shuffled,
-                    gSheetID,
-                    roomID
-                  ),
-                }"
+                :to="{ path: constructURL($route.fullPath, roomID) }"
               >
                 <button :disabled="!roomID" type="button" class="btn btn-dark">
                   Join Session
@@ -362,7 +355,11 @@ export default {
         routeFullPath = routeFullPath.slice(0, -1);
       }
 
-      return routeFullPath + "/" + roomID;
+      return (
+        routeFullPath +
+        "/Shuffled/1ghm-XOUZlYaOeHcl0zer4KSpCMaoN5u_X7iWmN2TrjY/" +
+        roomID
+      );
     },
     recreateSheetURL(sheetID) {
       return "https://docs.google.com/spreadsheets/d/" + sheetID;

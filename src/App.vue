@@ -21,7 +21,7 @@
           <app-gallery></app-gallery>
         </div>
 
-        <div v-if="!['Games', 'Gallery'].includes($route.params.gameType)">
+        <div>
           <!--For published version, remove any components you aren't using -->
           <div v-if="$route.fullPath == '/'">
             <app-gameLauncher
@@ -71,7 +71,7 @@
             v-if="$route.params.gameType == 'Sandbox' && $route.params.roomID"
           ></app-sandbox> -->
         </div>
-        <div v-else-if="$route.params.gameType == 'Games'">
+        <!-- <div v-else-if="$route.params.gameType == 'Games'">
           <div v-if="$route.fullPath == '/'">
             <app-customGameLauncher
               :routeGSheetID="$route.params.gSheetID"
@@ -82,7 +82,7 @@
             :routeGSheetID="$route.params.gSheetID"
             v-if="$route.params.roomID"
           ></app-customGameSessionManager>
-        </div>
+        </div> -->
       </div>
 
       <app-footer v-if="$route.params.roomID"></app-footer>
@@ -100,7 +100,7 @@ import Footer from "./components/layout/Footer.vue";
 
 // import GameMaker from "./components/launchers/GameMaker.vue";
 import GameLauncher from "./components/launchers/GameLauncher.vue";
-import CustomGameLauncher from "./components/games/CustomGameLauncher.vue";
+// import CustomGameLauncher from "./components/games/CustomGameLauncher.vue";
 
 import Gallery from "./components/launchers/Gallery.vue";
 
@@ -111,7 +111,7 @@ import Shuffled from "./components/formats/Shuffled.vue";
 // import SlotMachine from "./components/formats/SlotMachine.vue";
 // import Phases from "./components/formats/Phases.vue";
 // import Sandbox from "./components/formats/Sandbox.vue";
-import CustomGameSessionManager from "./components/games/CustomGameSessionManager.vue";
+// import CustomGameSessionManager from "./components/games/CustomGameSessionManager.vue";
 
 export default {
   name: "app",
@@ -130,8 +130,8 @@ export default {
     // "app-slotMachine": SlotMachine,
     // "app-phases": Phases,
     // "app-sandbox": Sandbox,
-    "app-customGameLauncher": CustomGameLauncher,
-    "app-customGameSessionManager": CustomGameSessionManager,
+    // "app-customGameLauncher": CustomGameLauncher,
+    // "app-customGameSessionManager": CustomGameSessionManager,
   },
   data() {
     return {};
